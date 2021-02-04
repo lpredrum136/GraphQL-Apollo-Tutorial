@@ -6,6 +6,10 @@ const typeDefs = gql`
 		name: String
 		genre: String
 	}
+
+	type Query {
+		books: [Book]
+	}
 `
 
 module.exports = typeDefs
