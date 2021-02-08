@@ -20,7 +20,7 @@ const Forms = () => {
 							<option disabled>Select author</option>
 						</Form.Control>
 					</Form.Group>
-					<Button variant='info' type='submit' className='float-right'>
+					<Button className='float-right' variant='info' type='submit'>
 						Add Book
 					</Button>
 				</Form>
@@ -36,7 +36,7 @@ const Forms = () => {
 					<Form.Group>
 						<Form.Control type='number' placeholder='Author age' />
 					</Form.Group>
-					<Button variant='info' type='submit' className='float-right'>
+					<Button className='float-right' variant='info' type='submit'>
 						Add Author
 					</Button>
 				</Form>
