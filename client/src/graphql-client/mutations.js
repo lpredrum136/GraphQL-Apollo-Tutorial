@@ -13,4 +13,13 @@ const addSingleBook = gql`
 	}
 `
 
-export { addSingleBook }
+const addSingleAuthor = gql`
+	mutation addSingleAuthorMutation($name: String, $age: Int) {
+		createAuthor(name: $name, age: $age) {
+			id
+			name
+		}
+	}
+`
+
+export { addSingleBook, addSingleAuthor }
