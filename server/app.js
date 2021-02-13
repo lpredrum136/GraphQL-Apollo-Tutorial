@@ -17,7 +17,7 @@ const mongoDataMethods = require('./data/db')
 const connectDB = async () => {
 	try {
 		await mongoose.connect(
-			'mongodb+srv://henrywebdev:1234@tutorialgraphql.et32c.mongodb.net/TutorialGraphQL?retryWrites=true&w=majority',
+			process.env.MONGODB_URL,
 			{
 				useCreateIndex: true,
 				useNewUrlParser: true,
