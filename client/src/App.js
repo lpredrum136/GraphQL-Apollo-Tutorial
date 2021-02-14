@@ -5,7 +5,7 @@ import Forms from './components/Forms'
 import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client'
 
 const client = new ApolloClient({
-	uri: 'https://limitless-earth-31519.herokuapp.com',
+	uri: 'https://limitless-earth-31519.herokuapp.com/graphql',
 	cache: new InMemoryCache()
 })
 
