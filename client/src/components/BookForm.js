@@ -24,7 +24,7 @@ const BookForm = () => {
 
 	const onSubmit = event => {
 		event.preventDefault()
-
+		console.log('test deploy')
 		addBook({
 			variables: { name, genre, authorId },
 			refetchQueries: [{ query: getBooks }]
