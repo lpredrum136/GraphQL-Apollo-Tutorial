@@ -50,6 +50,7 @@ const AuthorForm = () => {
 					name='name'
 					onChange={onInputChange}
 					value={name}
+					required
 				/>
 			</Form.Group>
 			<Form.Group>
@@ -59,6 +60,7 @@ const AuthorForm = () => {
 					name='age'
 					onChange={onInputChange}
 					value={age}
+					required
 				/>
 			</Form.Group>
 			<Button className='float-right' variant='info' type='submit'>

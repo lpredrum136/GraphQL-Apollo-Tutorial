@@ -49,6 +49,7 @@ const BookForm = () => {
 					name='name'
 					onChange={onInputChange}
 					value={name}
+					required
 				/>
 			</Form.Group>
 			<Form.Group>
@@ -58,6 +59,7 @@ const BookForm = () => {
 					name='genre'
 					onChange={onInputChange}
 					value={genre}
+					required
 				/>
 			</Form.Group>
 			<Form.Group>
@@ -69,6 +71,7 @@ const BookForm = () => {
 						name='authorId'
 						onChange={onInputChange}
 						value={authorId}
+						required
 					>
 						<option value='' disabled>
 							Select author
