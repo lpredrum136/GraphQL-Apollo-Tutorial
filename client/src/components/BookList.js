@@ -27,6 +27,7 @@ const BookList = () => {
 							className='text-center shadow'
 							key={book.id}
 							onClick={setBookSelected.bind(this, book.id)}
+							style={{ cursor: 'pointer' }}
 						>
 							<Card.Body>{book.name}</Card.Body>
 						</Card>
