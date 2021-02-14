@@ -1,6 +1,7 @@
 const express = require('express')
 const { ApolloServer } = require('apollo-server-express')
 const mongoose = require('mongoose')
+const cors = require('cors')
 
 // Load schema & resolvers
 const typeDefs = require('./schema/schema')
@@ -35,6 +36,7 @@ const server = new ApolloServer({
 })
 
 const app = express()
+app.use(cors())
 server.applyMiddleware({ app })
 
 app.listen({ port: process.env.PORT || 4000 }, () =>
