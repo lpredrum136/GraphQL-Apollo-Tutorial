@@ -1,0 +1,11 @@
+heroku cli
+
+heroku login
+heroku create
+
+npm i cors
+
+change PORT and start script in server/package.json
+
+git subtree push --prefix server heroku master
+heroku config:set MONGODB_URL=mongodb+srv://username:password@tutorialgraphql.et32c.mongodb.net/TutorialGraphQL?retryWrites=true&w=majority
